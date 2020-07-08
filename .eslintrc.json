@@ -1,0 +1,40 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    },
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "plugins": ["react", "prettier"],
+  "extends": ["airbnb", "plugin:react/recommended", "prettier"],
+  "rules": {
+    "no-unused-vars": 1,
+    //没有console
+    "no-console": 0,
+    "import/no-extraneous-dependencies": 0,
+    // 最后一个import 要有一个空行
+    "import/newline-after-import": 0,
+    "import/no-unresolved": 0,
+    "no-var": 2,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/self-closing-comp": 0,
+    "react/require-default-props": 0,
+    "react/no-unused-prop-types": 0,
+    "react/prefer-stateless-function": 0,
+    "react/forbid-prop-types": 0,
+    "import/no-named-as-default": 0,
+    "react/jsx-props-no-spreading": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "jsx-a11y/heading-has-content": 0,
+    "import/prefer-default-export": 0,
+    "react/no-danger": 0
+  }
+}
